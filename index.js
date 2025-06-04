@@ -10,7 +10,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 app.use(cors())
 app.use(express.static(path.join(__dirname, 'public')))
-app.get('/test', (req, res) => {
+app.get('/api/v1/test', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'))
 })
 
