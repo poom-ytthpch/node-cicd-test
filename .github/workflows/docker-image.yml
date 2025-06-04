@@ -33,7 +33,7 @@ jobs:
         key: ${{ secrets.SERVER_SSH_KEY }}
         port: 22
         script: |
-          cd /test/node-cicd-test
+          cd ~/test/node-cicd-test
           git pull origin main
           docker-compose down -v
           docker-compose up -d --build
